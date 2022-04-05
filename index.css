@@ -1,0 +1,313 @@
+* {
+  box-sizing: border-box;
+  font-family: "Signika Negative", sans-serif;
+  /* font-family: 'Source Sans Pro', Arial, sans-serif; */
+}
+
+body {
+  margin: 0px;
+  width: 100%;
+  height: 100%;
+  /* border: red solid; */
+  /* background: rgb(67, 67, 117); */
+  background: url("https://images.unsplash.com/photo-1551309292-e185c0b6e22a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1469&q=80")
+    no-repeat center fixed;
+    /* border: red solid; */
+    background-size: cover;
+}
+
+#upper_div {
+  background-size: cover;
+  height: 600px;
+  width: 100%;
+}
+
+#footer {
+  height: 400px;
+  width: 100%;
+  background-color: rgb(58, 55, 55);
+}
+
+#lower_div {
+  background: transparent;
+  padding-top: 10px;
+  margin-top: -20px;
+  border-radius: 30px;
+  background: transparent;
+  opacity: 5;
+  backdrop-filter: blur(0.8rem);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  /* border: red solid; */
+  box-shadow: -0.25rem -0.25rem 0.5rem rgb(255 255 255 / 7%),
+    0.25rem 0.25rem 0.5rem rgb(0 0 0 / 12%),
+    -0.75rem -0.75rem 1.75rem rgb(255 255 255 / 7%),
+    0.75rem 0.75rem 1.75rem rgb(0 0 0 / 12%),
+    inset 8rem 8rem 8rem rgb(0 0 0 / 5%),
+    inset -8rem -8rem 8rem rgb(255 255 255 / 5%);
+}
+
+#lower_div > * {
+  color: white;
+}
+
+#container {
+  display: grid;
+  grid-template-columns: repeat(4, 245px);
+  gap: 20px;
+  opacity: 1;
+  margin: auto;
+  margin-top: 50px;
+  padding: 10px;
+  overflow: hidden;
+  justify-content: center;
+  padding-top: 20px;
+  padding-bottom: 150px;
+}
+
+#container > div {
+  opacity: 1;
+  transition: opacity 1s;
+  -webkit-transition: opacity 1s;
+  -moz-transition: opacity 1s;
+}
+
+#container > div.fadeOut {
+  opacity: 0;
+}
+
+#container > div {
+  overflow: hidden;
+  border-radius: 8px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+#container > div:hover {
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em,
+    rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em,
+    rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
+}
+
+#container > div > div {
+  height: 27px;
+  display: flex;
+  /* border: red solid; */
+  align-items: center;
+  padding-left: 10px;
+  /* line-height: 5px; */
+}
+
+#container > div > div > p {
+  display: flex;
+  font-size: 16px;
+  font-family: "Source Sans Pro", Arial, sans-serif;
+  font-weight: 600;
+}
+
+#container > div > div:nth-child(4) {
+  color: #888;
+  font-weight: 100 !important;
+  backdrop-filter: blur(10rem);
+}
+
+#container > div > div:nth-child(3) {
+  color: #888;
+  font-weight: 100 !important;
+}
+
+h1 {
+  width: fit-content;
+  margin: auto;
+  margin-top: 20px;
+}
+
+img {
+  width: 100%;
+  height: 300px;
+}
+
+#logo {
+  width: 240px;
+  height: 30px;
+  opacity: 1;
+  margin-right: 20px;
+}
+
+#logo_div {
+  box-sizing: border-box;
+  height: fit-content;
+  width: fit-content;
+}
+
+#search_div {
+  position: relative;
+  top: 50%;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: fit-content;
+  width: fit-content;
+  margin: auto;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+#search {
+  height: 40px;
+  width: 700px;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  padding: 0 15px;
+  background: transparent;
+  font-size: 17px;
+  backdrop-filter: blur(1.5rem);
+  color: #fff;
+}
+
+
+#search_btn {
+  height: 43px;
+  width: 120px;
+  appearance: none;
+  backdrop-filter: blur(5.5rem);
+  background-color: transparent;
+  border: 2px solid #1A1A1A;
+  border-radius: 15px;
+  box-sizing: border-box;
+  color: #ffffff;
+  cursor: pointer;
+  display: inline-block;
+  font-family: Roobert,-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+  font-size: 16px;
+  font-weight: 600;
+  line-height: normal;
+  margin: 0;
+  /* min-height: 60px; */
+  /* min-width: 0; */
+  outline: none;
+  align-items: center;
+  padding: 0px 24px;
+  text-align: center;
+  text-decoration: none;
+  transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  width: 100%;
+  will-change: transform;
+}
+
+#search_btn:disabled {
+  pointer-events: none;
+}
+
+#search_btn:hover {
+  color: #fff;
+  background-color: #1A1A1A;
+  box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+  transform: translateY(-2px);
+}
+
+#search_btn:active {
+  box-shadow: none;
+  transform: translateY(0);
+}
+
+#search_result {
+  position: relative;
+  max-height: 200px;
+  height: fit-content;
+  width: 700px;
+  top: -1px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  display: none;
+  flex-direction: column;
+  padding:0 30px;
+  /* border: red solid; */
+  background: transparent;
+  backdrop-filter: blur(1.5rem);
+  opacity: 0.9;
+  border-bottom-left-radius: 6px;
+  border-bottom-right-radius: 6px;
+  overflow: scroll;
+  color: rgb(255, 255, 255);
+}
+
+#search_result > p {
+  /* width: fit-content; */
+  height: 30px;
+  cursor: pointer;
+}
+
+#search_result > p:hover {
+  color: rgb(177, 173, 166);
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+  height: 99%;
+  border-radius: 100px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 100px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 100px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+#no_result {
+  margin: auto;
+  margin-top: 50px;
+  width: 500px;
+}
+
+hr {
+  background-color: rgb(235, 233, 233) !important;
+  height: 6px;
+  margin: auto;
+  margin-top: 20px;
+  width: 80px;
+  border-radius: 10px;
+}
+
+#trending_div {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  margin: -10px;
+  padding-right: 50px;
+  /* border: red solid; */
+}
+
+#trending {
+  border: none;
+  outline: none;
+  font-size: large;
+  color: #ffffff;
+  border-bottom: 1px #727171 solid;
+  background: transparent;
+  margin: 40px;
+  /* background: rgba(0, 0, 0, 0.3); */
+  color: #fff;
+  text-shadow: 0 1px 0 rgba(0, 0, 0, 0.4);
+}
+
+#trending > option {
+  background: transparent !important;
+  color: #555;
+}

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Signika+Negative:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body id="trending_page">
+    <div id="upper_div">
+      <div id="search_div">
+        <img
+          src="https://dewey.tailorbrands.com/production/brand_version_mockup_image/969/6944006969_8528562e-8a28-4874-9776-3d51757e3eb2.png?cb=1646841080"
+          alt=""
+          id="logo"
+        />
+        <div style="height: 40px" id="inner_search_div">
+          <input type="text" id="search" placeholder="Search Movies"/>
+          <div id="search_result"></div>
+        </div>
+        <button id="search_btn">Search</button>
+      </div>
+    </div>
+    <div id="lower_div">
+      <hr />
+      <h1>Trending Movies</h1>
+      <div id="no_result"></div>
+      <div id="trending_div">
+        <select name="" id="trending">
+          <option value="day">Today</option>
+          <option value="week">This Week</option>
+        </select>
+      </div>
+      <div id="container"></div>
+    </div>
+
+    <div id="footer"></div>
+  </body>
+</html>
+
+<script src="index.js"></script>
