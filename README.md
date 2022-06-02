@@ -1,9 +1,5 @@
 # Movie_Wiki
 
-This is a website about movie info you can get some info on your favourite movie or find some movies by you can do that here.
-
-Checkout My website here - 
-
 Movie_Wiki is a website about movie info you can get some info on your favourite movie or find some movies by you can do that here.
 This is one my side projects. In this project I tried to explore CSS more and Javascript and found some realy interesting things 
 that I applyed in this project and I learned alot from it. In the future I like to try more different things in my project and explore more.
