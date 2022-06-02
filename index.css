@@ -24,8 +24,11 @@ body {
 
 #footer {
   height: 400px;
+  display: flex;
   width: 100%;
   /* background-color: rgb(58, 55, 55); */
+  align-items: center;
+  justify-content: center;
 }
 
 #lower_div {

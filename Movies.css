@@ -139,6 +139,7 @@
   width: 200px;
   border-radius: 20px;
   /* border: red solid; */
+  object-fit: cover;
 }
 
 #info_div {
@@ -158,6 +159,9 @@
   height: 500px;
   width: 100%;
   /* background-color: rgb(48, 47, 47); */
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 #go_back {
